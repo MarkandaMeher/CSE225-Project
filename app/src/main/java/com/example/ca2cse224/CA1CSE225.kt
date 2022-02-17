@@ -1,17 +1,20 @@
 package com.example.ca2cse224
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.View
 import android.widget.*
-import java.text.NumberFormat
-import android.widget.CompoundButton
 import java.lang.StringBuilder
 
 
-class Q2ca2 : AppCompatActivity() {
+class CA1CSE225 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_q2ca2)
+        setContentView(R.layout.activity_ca1)
 
         val Cos = findViewById<EditText>(R.id.cost_of_service)
         val option = findViewById<RadioGroup>(R.id.tip_options)
@@ -23,7 +26,11 @@ class Q2ca2 : AppCompatActivity() {
         val check3 = findViewById<CheckBox>(R.id.eat)
         val bill = findViewById<Button>(R.id.PrintBill)
         val exit = findViewById<Button>(R.id.Exit3)
-        val result = findViewById<TextView>(R.id.Result)
+        val RB = findViewById<RatingBar>(R.id.simpleRatingBar)
+        val pbar2 = findViewById<ProgressBar>(R.id.pBar2)
+        val tview = findViewById<TextView>(R.id.tView)
+
+        pbar2.visibility = View.INVISIBLE
 
         var flag : Int = 2
         var flag2 : Int = 2
@@ -65,6 +72,7 @@ class Q2ca2 : AppCompatActivity() {
         }
 
 
+
         bill.setOnClickListener {
 
                 var result2 = StringBuilder()
@@ -97,8 +105,40 @@ class Q2ca2 : AppCompatActivity() {
                 result2.append(check3.text.toString()+"\n")
             }
 
+            var i = RB.rating
+            result2.append("Number of Stars Given : $i\n")
+
             result2.append("Thanks You!")
-            result.text = result2
+            val s:String = "$result2"
+
+
+            pbar2.visibility = View.VISIBLE
+            var j = pbar2.progress
+            Thread{
+                while (j<100){
+                    j += 1
+                    Handler(Looper.getMainLooper()).post {
+                        pbar2.progress = j
+                        tview.text = j.toString() + "/" + pbar2.max
+                        if (j == 100) {
+                            pbar2.visibility = View.INVISIBLE
+                            val intent = Intent(this, EndResult::class.java)
+                            intent.putExtra("id_value",s )
+                            startActivity(intent)
+
+                        }
+                    }
+
+                    try{
+                        Thread.sleep(100)
+
+                    }
+                    catch (e:InterruptedException){
+                        e.printStackTrace()
+                    }
+                }
+            }.start()
+
 
         }
 
@@ -106,6 +146,7 @@ class Q2ca2 : AppCompatActivity() {
         exit.setOnClickListener {
             System.exit(0)
         }
+
 
 
 

@@ -8,16 +8,23 @@
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/circle.xml" value="0.2074074074074074" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/cr.xml" value="0.14629629629629629" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/img.xml" value="0.2074074074074074" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/my_fav.xml" value="0.1537037037037037" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/round.xml" value="0.1296875" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/rounded_corner.xml" value="0.14907407407407408" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/drawable/rounded_courner.xml" value="0.14907407407407408" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout-v31/activity_q1.xml" value="0.176" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_ca1.xml" value="0.2" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_end_result.xml" value="0.15444015444015444" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_main.xml" value="0.21487179487179486" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_q1.xml" value="0.152" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_q1ca2.xml" value="0.176" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_q1part2.xml" value="0.11851851851851852" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_q1part3.xml" value="0.11851851851851852" />
         <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_q2ca2.xml" value="0.2" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/activity_splash_screen.xml" value="0.176" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/custom_toast.xml" value="0.23229166666666667" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/layout/toolbar.xml" value="0.23229166666666667" />
+        <entry key="..\:/G Aap Dev/CA2CSE224/app/src/main/res/menu/menu_toolbar.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
